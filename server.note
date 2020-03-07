@@ -1,0 +1,15 @@
+MANDATORY
+	* set up a web server with Nginx in debian buster OS and in one docker container.
+	* server must be able to run several services at the same time : WordPress, phpMyAdmin and MySQL.
+	* the server should use SSL protocol.
+	* redirect to the correct website, depending on the url.
+	* run server with an index that must be able to be disabled.
+
+FORBIDDEN
+	- No docker-compose : 
+
+BONUS
+	No bonus.
+
+
+

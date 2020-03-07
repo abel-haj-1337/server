@@ -1,0 +1,22 @@
+$ = docker
+
+[docker] [mng category] [command] [name/id]
+
+$ container
+			create				
+			start
+			run myapp			- build and run the container : myapp
+			stop				- stops a container
+			kill
+			rm
+			ls
+			inspect
+			logs
+
+$ 
+$ 
+$ 
+$ 
+$ 
+$ 
+
