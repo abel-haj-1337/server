@@ -2,19 +2,26 @@ $ = docker
 
 [docker] [mng category] [command] [name/id]
 
+$ attch							- get back to a previously runned container in the background
+
 $ container
-			create				
+			create				- create a base image from SCRATCH of child image from parent image
 			start
 			run myapp			- build and run the container : myapp
 			stop				- stops a container
 			kill
 			rm
 			ls
-			inspect
+			inspect				- list information about a given container
 			logs
 
-$ 
-$ 
+$ image
+			build				- 
+			push				- 
+			ls					- list images
+			history				- 
+			inspect				- list information about a given image 
+			rm					-  
 $ 
 $ 
 $ 

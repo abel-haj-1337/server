@@ -11,5 +11,19 @@ FORBIDDEN
 BONUS
 	No bonus.
 
+REQUIRED MODULES
+	php
+	mysql
+	nginx
+	wordpress
+	phpmyadmin
+
+
+1)	running docker container with debian buster image
+2)	
+3)
+4)
+5)
+6)
 
 
