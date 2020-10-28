@@ -19,7 +19,7 @@ REQUIRED MODULES
 	phpmyadmin
 
 
-1)	running docker container with debian buster image
+1)	running docker container with debian buster image with ports(http,https)
 2)	
 3)
 4)

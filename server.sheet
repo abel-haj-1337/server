@@ -2,28 +2,30 @@ $ = docker
 
 [docker] [mng category] [command] [name/id]
 
-$ attch							- get back to a previously runned container in the background
+$ attch				- get back to a previously runned container in the background
 
 $ container
-			create				- create a base image from SCRATCH of child image from parent image
-			start
-			run myapp			- build and run the container : myapp
-			stop				- stops a container
-			kill
-			rm
-			ls
-			inspect				- list information about a given container
-			logs
+		create		- create a base image from SCRATCH of child image from parent image
+		start
+		run myapp	- build and run the container : myapp
+		stop		- stops a container
+		kill
+		rm
+		ls
+		inspect		- list information about a given container
+		logs
 
 $ image
-			build				- 
-			push				- 
-			ls					- list images
-			history				- 
-			inspect				- list information about a given image 
-			rm					-  
+		build		- 
+		push		- 
+		ls		- list images
+		history		- 
+		inspect		- list information about a given image 
+		rm		-  
+
 $ 
 $ 
 $ 
 $ 
 
+-p				- map port from host machine to container
