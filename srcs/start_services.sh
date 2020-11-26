@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #	STARTING SERVICES
 #   restart mysql service
 /etc/init.d/mysql restart
@@ -7,3 +9,5 @@
 /etc/init.d/php7.3-fpm start
 
 service --status-all
+cat
+#/bin/bash

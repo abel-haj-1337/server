@@ -19,14 +19,15 @@
 # Default server configuration
 #
 server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
-
 	# SSL configuration
-	#
-	# listen 443 ssl default_server;
-	# listen [::]:443 ssl default_server;
-	#
+
+	listen 443 ssl default_server;
+	listen [::]:443 ssl default_server;
+
+	ssl_certificate /etc/ssl/certs/ssl_certificate.crt;
+	ssl_certificate_key /etc/ssl/certs/ssl_key.key;
+
+
 	# Note: You should disable gzip for SSL traffic.
 	# See: https://bugs.debian.org/773332
 	#
@@ -46,6 +47,8 @@ server {
 	server_name _;
 
 	location / {
+		# Disable displaying a directory listing
+		autoindex on;
 		# First attempt to serve request as file, then
 		# as directory, then fall back to displaying a 404.
 		try_files $uri $uri/ =404;
@@ -76,9 +79,13 @@ server {
 # You can move that to a different file under sites-available/ and symlink that
 # to sites-enabled/ to enable it.
 #
-#server {
-#	listen 80;
-#	listen [::]:80;
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name localhost;
+	return 301 https://localhost$request_uri;
+
 #
 #	server_name example.com;
 #
@@ -88,4 +95,4 @@ server {
 #	location / {
 #		try_files $uri $uri/ =404;
 #	}
-#}
+}
