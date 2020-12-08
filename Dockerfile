@@ -12,4 +12,4 @@ RUN     sh /tmp/install_system.sh
 RUN     sh /tmp/configure_pma_wp.sh
 RUN     sh /tmp/install_mysql.sh
 #   
-CMD     sh /tmp/start_services.h
+CMD     sh /tmp/start_services.sh
